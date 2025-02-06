@@ -1,0 +1,20 @@
+[project]
+name = "prjcrewai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.100.1",
+    "litellm>=1.59.8",
+]
+
+[project.scripts]
+prjcrewai = "prjcrewai:main"
+simpleflow ="prjcrewai.main:kickoff"
+chain_prompt="prjcrewai.main1:kickoff"
+routeflow="prjcrewai.main2:kickoff"
+plot="prjcrewai.main2:plot"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
