@@ -1,20 +1,20 @@
 [project]
-name = "prjcrewai"
+name = "project"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
+authors = [
+    { name = "TasmeerJamali", email = "163600279+TasmeerJamali@users.noreply.github.com" }
+]
 requires-python = ">=3.11"
 dependencies = [
-    "crewai>=0.100.1",
-    "litellm>=1.59.8",
+    "crewai>=0.102.0",
+    "crewai-tools>=0.36.0",
 ]
 
 [project.scripts]
-prjcrewai = "prjcrewai:main"
-simpleflow ="prjcrewai.main:kickoff"
-chain_prompt="prjcrewai.main1:kickoff"
-routeflow="prjcrewai.main2:kickoff"
-plot="prjcrewai.main2:plot"
+project = "project:main"
+panaflow = "project.main:kickoff"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
